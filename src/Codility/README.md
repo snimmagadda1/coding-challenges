@@ -1,0 +1,1 @@
+Solutions to [Codility exercises for programmers](https://app.codility.com/programmers/lessons)
