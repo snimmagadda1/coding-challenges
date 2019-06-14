@@ -40,6 +40,24 @@ public class ArrayQueue {
         return theQueue[front];
     }
 
+    public void priorityInsert(String toAdd){
+        int i;
+
+        if(numItems == 0 ){
+            insert(toAdd);
+        } else {
+            for(i = numItems -1; i >= 0; i--){
+                if(Integer.parseInt(toAdd) > Integer.parseInt(theQueue[i])){
+                    theQueue[i+1] = theQueue[i]; // move it back
+                } else break;
+            }
+
+            theQueue[i+1] = toAdd;
+            rear++;
+            numItems ++;
+        }
+    }
+
 
     public static void main(String[] args){
         ArrayQueue queue = new ArrayQueue(10);
@@ -49,8 +67,14 @@ public class ArrayQueue {
         System.out.println(queue.remove());
         System.out.println(queue.remove());
         System.out.println(queue.remove());
-        System.out.println(queue.remove());
+        System.out.println(queue.front);
 
+        ArrayQueue queue2 = new ArrayQueue(10);
+        queue2.priorityInsert("12");
+        queue2.priorityInsert("19");
+        queue2.priorityInsert("6");
+        System.out.println(queue2.remove()); // Should be 19;
+        System.out.println(queue2.remove()); // Should be 12
     }
 
 
