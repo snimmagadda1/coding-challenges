@@ -69,7 +69,7 @@ public class ArrayQueue {
         System.out.println(queue.remove());
         System.out.println(queue.front);
 
-        ArrayQueue queue2 = new ArrayQueue(10);
+        ArrayQueue queue2 = new ArrayQueue(3);
         queue2.priorityInsert("12");
         queue2.priorityInsert("19");
         queue2.priorityInsert("6");
