@@ -1,5 +1,6 @@
 package DataStructures;
 
+
 public class ArrayQueue {
 
     private int queueSize; // total size
