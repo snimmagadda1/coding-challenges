@@ -25,6 +25,7 @@ Note that the answer must be a substring, "pwke" is a subsequence and not a subs
  */
 public class LengthOfLongestSubstring {
 
+    // This works but isn't super optimized
     public int lengthOfLongestSubstring(String s) {
         int ans = 0;
         for (int i = 0; i < s.length(); i++)
@@ -45,6 +46,8 @@ public class LengthOfLongestSubstring {
         return true;
     }
 
+    // This is slightly more optimized
+    // Basically creates a window [i,j) and moves j when the next char != i, else move i and continue
     public static int lengthOfLongestSubstringWindow(String s){
         int n = s.length();
         Set<Character> set = new HashSet<>();
