@@ -23,7 +23,7 @@ public class AtoI {
                 break;
             }
             numberString.append(currDigit);
-            if(sign * Long.parseLong(numberString.toString())> Integer.MAX_VALUE){ // don't forget to multiply by sign here to get true value of number i.e if input is Integer.MIN_VALUE this would be true w/out sign 
+            if(sign * Long.parseLong(numberString.toString())> Integer.MAX_VALUE){ // don't forget to multiply by sign here to get true value of number i.e if input is Integer.MIN_VALUE this would be true w/out sign
                 return Integer.MAX_VALUE;
             } else if (sign *Long.parseLong(numberString.toString()) < Integer.MIN_VALUE){ // don't forget to multiply by sign here to get true value of number
                 return Integer.MIN_VALUE;
