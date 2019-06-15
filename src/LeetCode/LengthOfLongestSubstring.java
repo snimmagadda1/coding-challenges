@@ -45,7 +45,7 @@ public class LengthOfLongestSubstring {
         return true;
     }
 
-    public int lengthOfLongestSubstringWindow(String s){
+    public static int lengthOfLongestSubstringWindow(String s){
         int n = s.length();
         Set<Character> set = new HashSet<>();
         int ans = 0, i = 0, j = 0;
@@ -60,6 +60,11 @@ public class LengthOfLongestSubstring {
             }
         }
         return ans;
+    }
+
+    public static void main(String[] args){
+        String s1 = "ccabcad"; // longest is bcad
+        System.out.println(lengthOfLongestSubstringWindow(s1));
     }
 
 }
