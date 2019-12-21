@@ -1,6 +1,8 @@
 # coding-challenges 
 
-Personal collection of solutions to problems from a number of sources. Currently:
+Personal collection of solutions to problems from a number of sources. 
+
+Currently:
     * [LeetCode](https://leetcode.com/problemset/all/)
     * [Codility](https://app.codility.com/programmers/lessons/1-iterations/)
 
