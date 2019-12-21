@@ -9,7 +9,7 @@ Currently:
 
 ## LeetCode
 
-## Algorithms
+### Algorithms
 |  #  | Title           |  Solution       |  Time           | Space           | Difficulty    |
 |-----|---------------- | --------------- | --------------- | --------------- | ------------- |
 #1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Java](./java/LeetCode/TwoSum.java) | TODO      | TODO       | Easy         |
