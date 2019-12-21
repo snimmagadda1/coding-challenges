@@ -24,8 +24,8 @@ func twoSum(nums []int, target int) []int {
 		// Compliment
 		compliment := target - value
 
-		// If map has theh compliment and compliment is not the same number as value
-		if foundValue, ok := numberMap[compliment]; ok && numberMap[compliment] != idx {
+		// If map has the compliment and foundValue is not in same number as value
+		if foundValue, ok := numberMap[compliment]; ok && foundValue != idx {
 			toReturn = append(toReturn, idx, foundValue)
 			return toReturn
 		}
