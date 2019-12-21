@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/badge/language-Java%20%2F%20Go-blue.svg)&nbsp;
 
 
-Personal collection of solutions to problems from a number of sources. 
+Personal collection of solutions to problems from a number of sources. First pass may be a less than optimal solution. Optimizations will be made iteratively.
 
 Currently:
 - [LeetCode](https://leetcode.com/problemset/all/)
