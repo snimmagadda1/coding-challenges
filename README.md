@@ -20,5 +20,6 @@ Currently:
 #3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Java](./java/LeetCode/LengthOfLongestSubstring.java) | TODO      | TODO       | Medium         |
 #7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)| [Java](./java/LeetCode/ReverseInteger.java)/[Go](./golang/LeetCode/reverse-integer/main.go) | O(log(n))      | O(1)       | Easy         |
 #8 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [Java](./java/LeetCode/AtoI.java) | TODO      | TODO       | Medium         |
+#9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)| [Go](./golang/LeetCode/palindrome-number/main.go) | O(log(n))     | O(1)       | Easy         |
 #13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/submissions/)| [Go](./golang/LeetCode/roman-to-integer/main.go) | O(n)     | O(n)       | Easy         |
 
