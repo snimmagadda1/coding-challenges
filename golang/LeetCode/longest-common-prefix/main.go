@@ -7,7 +7,7 @@ package main
 
 import (
 	"fmt"
-	"strings"
+	"math"
 )
 
 const (
@@ -43,29 +43,18 @@ func longestCommonPrefix(strs []string) string {
 
 func lcp(str1, str2 string) string {
 
-	var sb strings.Builder
+	sb := ""
 
-	// FIXME: elegant way to do this in go w/out copy
-	if len(str1) < len(str2) {
-		r2 := []rune(str2)
-		for i, r := range str1 {
-			if r2[i] == r {
-				sb.WriteRune(r)
-			} else {
-				break
-			}
-		}
-	} else {
-		r2 := []rune(str1)
-		for i, r := range str2 {
-			if r2[i] == r {
-				sb.WriteRune(r)
-			} else {
-				break
-			}
+	length := math.Min(float64(len(str1)), float64(len(str2)))
+
+	for i := 0; i < int(length); i++ {
+		if str1[i] == str2[i] {
+			sb += string(str1[i])
+		} else {
+			break
 		}
 	}
-	return sb.String()
+	return sb
 }
 
 func shortestString(strs []string) string {
@@ -83,7 +72,7 @@ func shortestString(strs []string) string {
 
 func main() {
 	t1 := []string{"flower", "flow", "flight"}
-	t2 := []string{"", "flow"}
+	t2 := []string{"cir", "car"}
 	fmt.Println("test1 ", longestCommonPrefix(t1))
 	fmt.Println("test2 ", longestCommonPrefix(t2))
 }
