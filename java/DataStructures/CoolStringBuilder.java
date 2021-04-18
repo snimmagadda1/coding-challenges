@@ -9,7 +9,7 @@ public class CoolStringBuilder {
     private int size = 0;
 
     public CoolStringBuilder() {
-        charBuffer = new char[10];
+        charBuffer = new char[MIN_LENGTH];
     }
 
     public CoolStringBuilder append(String s) {
@@ -19,7 +19,6 @@ public class CoolStringBuilder {
         // Check size, if more needed, double
         boolean overFlow = size + inChars.length > charBuffer.length;
         if (overFlow) {
-            char[] temp = charBuffer;
             charBuffer = Arrays.copyOf(charBuffer, inChars.length + 2 * charBuffer.length);
         }
         // Iterate and insert
